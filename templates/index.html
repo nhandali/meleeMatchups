@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Melee Matchups!</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'main.css' )}}" />
+  </head>
+  <body>
+  <h1> SSBM Matchups! </h1>
+  <h2> Maybe you'll learn something Sam! </h2>
+  <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV3lQAx42e3gEjnZLWF2O_ceTYTj42SuGtrRibyud7f-Vv89m-Bple9OdQ">
+      <form action = "/index" method = "post"> 
+      		Character 1: 
+      		{{form.char1}} 
+      		Player 1: 
+      		{{form.player1}}<br>
+      		Character 2:
+      		{{form.char2}}
+      		Player 2: 
+      		{{form.player2}} <br>
+          Number of videos to show:
+          {{form.numVids}}
+      		<input type = "submit" name = "my-form" value = "Search">
+      </form>
+      {%for i in range(form.numVids.data) %}
+      <div class = "video">
+         
+        <a href = {{form.vidLinks[i]}}> {{form.titles[i]}} </a>
+      </div>
+      {%endfor%}
+
+  </body>
+</html>
