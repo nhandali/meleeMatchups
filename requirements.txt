@@ -3,7 +3,7 @@ appdirs==1.4.3
 beautifulsoup4==4.6.0
 bs4==0.0.1
 cffi==1.10.0
-Flask==0.12.2
+Flask==1.0
 Flask-WTF==0.14.2
 httplib2==0.10.3
 jedi==0.10.2
