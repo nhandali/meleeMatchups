@@ -22,7 +22,7 @@ pycparser==2.17
 Pygments==2.2.0
 pyparsing==2.2.0
 requests==2.14.2
-rsa==3.4.2
+rsa==4.1
 simplegeneric==0.8.1
 six==1.10.0
 traitlets==4.3.2
